@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saqlain</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <a href="#">Only<span>Nothing</span></a>
+
+      <img id="mobile-cta" class="mobile-menu" src="/img/menu.svg" alt="Open Navigation">
+
+      <nav>
+        <img id="mobile-exit" class="exit-mobile-menu" src="/img/exit.svg" alt="Close Navigation">
+
+        <ul class="primary-nav">
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+        </ul>
+
+        <ul class="secondery-nav">
+          <li><a href="#">Contact</a></li>
+          <li class="go-premium"><a href="#">Go Premium</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="left-col">
+        <p class="subhead">Nothing Nothing &amp; Nothing</p>
+        <h1>Nothing is actually Nothing</h1>
+
+        <div class="hero-cta">
+          <a href="#" class="primary-cta">Try Nothing for free</a>
+          <a href="#" class="watch-video-cta">
+            <img src="/img/watch.svg" alt="Watch a video">Watch a video
+          </a>
+        </div>
+      </div>
+
+      <img src="/img/illustration.svg" class="hero-img" alt="Illustration">
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <ul class="features-list">
+        <li>Nothing One</li>
+        <li>Nothing Two</li>
+        <li>Nothing Three</li>
+        <li>Nothing Four</li>
+        <li>Nothing Five</li>
+        <li>Nothing Six</li>
+      </ul>
+
+      <img src="/img/holding-phone.jpg" alt="Man holding phone">
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <ul>
+        <li>
+          <img src="/img/person.jpg" alt="Person">
+
+          <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+          <cite>- Saqlain</cite>
+        </li>
+        <li>
+          <img src="/img/person.jpg" alt="Person">
+
+          <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+          <cite>- Fahim</cite>
+        </li>
+        <li>
+          <img src="/img/person.jpg" alt="Person">
+
+          <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+          <cite>- Saqlain Fahim</cite>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-left">
+        <h2>Contact</h2>
+
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name">
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+          <input type="submit" class="send-message-cta" value="Send message">
+        </form>
+      </div>
+
+      <div class="contact-right">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29199.787667487464!2d90.43375584939241!3d23.81954283186305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c62fce7d991f%3A0xacfaf1ac8e944c05!2sBasundhara%20Residential%20Area%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1734495755913!5m2!1sen!2sbd" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-cta')
+          nav = document.querySelector('nav')
+          mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+  </script>
+</body>
+</html>
